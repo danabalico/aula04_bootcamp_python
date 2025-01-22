@@ -42,7 +42,7 @@
 #     print(elemento)
 
 #4.
-# def contar_caracteres(s):
+# def contar_caracteres(s): 
 #     contagem:dict= {}
 #     for caractere in s:
 #         contagem[caractere] = contagem.get(caractere, 0) + 1
@@ -50,3 +50,9 @@
 # resultado = contar_caracteres("engenharia de dados")
 # for caractere, quantidade in resultado.items():
 #     print(f"{caractere}: {quantidade}")
+
+#5.
+lista_de_compras:list = ["maçã", "banana", "cereja"]
+preco_dos_itens: dict = {"maçã": 0.45, "banana": 0.30, "cereja": 0.65}
+preco_total:float = sum(preco_dos_itens[item] for item in lista_de_compras)
+print(f"Preço total: {preco_total}")
